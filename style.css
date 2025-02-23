@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#global {
+	border: 1px solid blue;
+	min-height: 300px;
+	padding: 20px;
+}
+
+.hero {
+	align-items: center;
+	border: 1px solid red;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+	min-height: 300px;
+	padding: 30px;
+}
+
+.hero h1 {
+}
+
+.game {
+	border: 1px solid green;
+	margin-bottom: 30px;
+	min-height: 200px;
+}
