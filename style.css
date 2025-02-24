@@ -2,11 +2,24 @@ body {
 	margin: 0;
 	padding: 0;
 }
+* {
+	box-sizing: border-box;
+}
 
 #global {
 	border: 1px solid blue;
 	min-height: 300px;
 	padding: 20px;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
 }
 
 .hero {
@@ -26,4 +39,59 @@ body {
 	border: 1px solid green;
 	margin-bottom: 30px;
 	min-height: 200px;
+}
+
+.game .row {
+	justify-content: space-between;
+}
+
+.game .col {
+	align-items: center;
+	flex: 0 0 30%;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.game button,
+.game a {
+	appearance: none;
+	background-color: #111;
+	border: 1px solid #00f;
+	border-radius: 8px;
+	color: #f80;
+	cursor: pointer;
+	display: inline-block;
+	padding: 10px 20px;
+	text-decoration: none;
+	transition: box-shadow 0.3s;
+}
+
+.game button:hover,
+.game a:hover {
+	box-shadow:
+		inset 0px 0px 10px rgba(255, 251, 0, 0.712),
+		inset 0px 0px 10px rgba(255, 251, 0, 0.712);
+}
+
+.game a {
+	margin-bottom: auto;
+	margin-top: auto;
+}
+
+.game .thumbnail {
+	display: inline-block;
+	flex: 0 0 70%;
+	padding: 10px;
+}
+.game .thumbnail img {
+	aspect-ratio: 16/9;
+	display: inline-block;
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+}
+
+.game_name {
+	border: 10px double #05f;
+	margin: 0;
 }
